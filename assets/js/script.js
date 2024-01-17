@@ -157,3 +157,26 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// // email js
+
+// emailjs.init("YOUR_USER_ID"); // Replace with your user ID
+
+// window.onload = function () {
+//   document
+//     .getElementById("myForm")
+//     .addEventListener("submit", function (event) {
+//       event.preventDefault(); // Prevent the default form submission
+
+//       emailjs.sendForm("service_1jx83rh", "template_3b5o7u5", this).then(
+//         function () {
+//           console.log("SUCCESS!");
+//           // You can clear the form or display a success message
+//         },
+//         function (error) {
+//           console.log("FAILED...", error);
+//           // You can display an error message
+//         }
+//       );
+//     });
+// };
