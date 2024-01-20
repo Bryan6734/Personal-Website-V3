@@ -78,7 +78,7 @@
   --fs-5: 15px;
   --fs-6: 14px;
   --fs-7: 13px;
-  --fs-8: 11px;
+  --fs-8: 15px;
 
   /* font-weight */
   --fw-300: 400;
@@ -1494,7 +1494,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .navbar-link {
-    --fs-8: 14px;
+    /* --fs-8: 15px; */
   }
 
   /**
