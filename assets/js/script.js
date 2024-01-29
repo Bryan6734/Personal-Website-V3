@@ -14,8 +14,8 @@ sidebarBtn.addEventListener("click", function () {
   elementToggleFunc(sidebar);
 });
 
-// testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
+// projects variables
+const projectsItem = document.querySelectorAll("[data-project-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
@@ -24,32 +24,52 @@ const overlay = document.querySelector("[data-overlay]");
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
-
+const modalTime = document.querySelector("[data-modal-time]");
+const modalSkills = document.querySelector("[data-modal-skills]");
+const modalLink = document.querySelector("[data-modal-link]");
 // modal toggle function
-const testimonialsModalFunc = function () {
+const projectsModalFunc = function () {
   modalContainer.classList.toggle("active");
   overlay.classList.toggle("active");
 };
 
 // add click event to all modal items
-for (let i = 0; i < testimonialsItem.length; i++) {
-  testimonialsItem[i].addEventListener("click", function () {
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector(
-      "[data-testimonials-title]"
-    ).innerHTML;
-    modalText.innerHTML = this.querySelector(
-      "[data-testimonials-text]"
-    ).innerHTML;
+for (let i = 0; i < projectsItem.length; i++) {
+  projectsItem[i].addEventListener("click", function () {
+    modalImg.src = this.querySelector("[data-project-img]").src;
+    modalImg.alt = this.querySelector("[data-project-img]").alt;
+    modalTitle.innerHTML = this.querySelector("[data-project-title]").innerHTML;
+    modalText.innerHTML = this.querySelector("[data-project-desc]").innerHTML;
+    modalTime.innerHTML = this.querySelector("[data-project-time]").innerHTML;
 
-    testimonialsModalFunc();
+    if (this.querySelector("[data-project-link]").innerHTML === "") {
+      modalLink.href = "";
+      modalLink.classList.add("disabled");
+      modalLink.addEventListener("click", function (event) {
+        event.preventDefault();
+      });
+
+    } else {
+      modalLink.href = this.querySelector("[data-project-link]").innerHTML;
+    }
+
+    const modalSkillsList = this.querySelector("[data-project-skills]")
+      .innerHTML.trim()
+      .split(", ");
+
+    const skillsHTML = modalSkillsList
+      .map((skill) => `<span class="chip">${skill}</span>`)
+      .join(" ");
+
+    modalSkills.innerHTML = skillsHTML;
+
+    projectsModalFunc();
   });
 }
 
 // add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
+modalCloseBtn.addEventListener("click", projectsModalFunc);
+overlay.addEventListener("click", projectsModalFunc);
 
 // custom select variables
 const select = document.querySelector("[data-select]");
@@ -138,8 +158,6 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-
-
 // (function () {
 //   // https://dashboard.emailjs.com/admin/account
 //   emailjs.init("Me6GoQ5XMsum2cn9T");
@@ -167,8 +185,6 @@ for (let i = 0; i < navigationLinks.length; i++) {
 //       );
 //     });
 // };
-
-
 
 // // email js
 

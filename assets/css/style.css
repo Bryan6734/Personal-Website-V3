@@ -258,6 +258,22 @@ article.active {
   font-weight: var(--fw-500);
 }
 
+.chip {
+  display: inline;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  padding: 5px 5px;
+  position: relative;
+  color: #88b6ff;
+  margin-bottom: 10px;
+
+  font-weight: 400;
+  background: var(--eerie-black-1);
+
+  box-shadow: var(--shadow-5);
+}
+
 .article-title {
   position: relative;
   padding-bottom: 7px;
@@ -687,6 +703,19 @@ span.blue-text {
   visibility: visible;
 }
 
+.modal-content p.modal-skills {
+  margin-top: 10px;
+  line-height: 2.1;
+  font-size: var(--fs-7);
+}
+
+.modal-content a {
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -1037,6 +1066,7 @@ span.blue-text {
   position: relative;
   width: 100%;
   height: 200px;
+  max-height: 200px;
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
@@ -1086,7 +1116,8 @@ span.blue-text {
 
 .project-img img {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 4/3;
+
   object-fit: cover;
   transition: var(--transition-1);
 }
@@ -1593,6 +1624,7 @@ textarea.form-input::-webkit-resizer {
 
   .modal-avatar-box img {
     width: 65px;
+    border-radius: 5px;
   }
 
   .modal-img-wrapper > img {
