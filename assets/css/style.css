@@ -1473,7 +1473,13 @@ textarea.form-input::-webkit-resizer {
   }
 
   .avatar-box img {
+    padding-top: 10px;
     width: 120px;
+    
+    object-fit: contain;
+    border-radius: 30px;
+
+    
   }
 
   .info-content .name {
