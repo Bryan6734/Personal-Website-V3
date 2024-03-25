@@ -274,6 +274,10 @@ article.active {
   box-shadow: var(--shadow-5);
 }
 
+span.normal-font-weight {
+  font-weight: 400;
+}
+
 .article-title {
   position: relative;
   padding-bottom: 7px;
@@ -349,6 +353,7 @@ span.blue-text {
 
   /* make it not block */
   display: inline;
+  font-weight: 500;
 }
 
 /*-----------------------------------*\
@@ -389,6 +394,15 @@ span.blue-text {
 .avatar-box img {
   height: 75px;
   width: 85px;
+  
+}
+
+
+.priorities {
+  /* make this ordered list numbered */
+  padding-left: 20px;
+  
+
   
 }
 
@@ -480,6 +494,7 @@ span.blue-text {
 .contact-title {
   color: var(--light-gray-70);
   font-size: var(--fs-8);
+  font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 2px;
 }
