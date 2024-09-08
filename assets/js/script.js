@@ -44,7 +44,6 @@ var tag_cloud = TagCloud(
     "MongoDB",
     "Node.js",
     "Leaflet",
-
   ],
   {
     radius: radius,
@@ -52,10 +51,9 @@ var tag_cloud = TagCloud(
     initSpeed: "fast",
     direction: 135,
     keep: true,
-    itemClass: "word-cloud-item"
+    itemClass: "word-cloud-item",
   }
 );
-
 
 // if screen width is less than 768px, change radius from 250 to 150
 
@@ -215,54 +213,3 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
-
-// (function () {
-//   // https://dashboard.emailjs.com/admin/account
-//   emailjs.init("Me6GoQ5XMsum2cn9T");
-// })();
-
-// window.onload = function () {
-//   document
-//     .getElementById("contact-form")
-//     .addEventListener("submit", function (event) {
-//       event.preventDefault();
-//       // generate a five digit number for the contact_number variable
-//       this.contact_number.value = (Math.random() * 100000) | 0;
-//       // these IDs from the previous steps
-//       emailjs.sendForm("service_1jx83rh", "template_3b5o7u5", this).then(
-//         function () {
-//           console.log("SUCCESS!");
-
-//           alert("Your message has been sent. Thank you!");
-//           // disable button
-//           document.getElementById("form-btn").disabled = true;
-//         },
-//         function (error) {
-//           console.log("FAILED...", error);
-//         }
-//       );
-//     });
-// };
-
-// // email js
-
-// emailjs.init("YOUR_USER_ID"); // Replace with your user ID
-
-// window.onload = function () {
-//   document
-//     .getElementById("myForm")
-//     .addEventListener("submit", function (event) {
-//       event.preventDefault(); // Prevent the default form submission
-
-//       emailjs.sendForm("service_1jx83rh", "template_3b5o7u5", this).then(
-//         function () {
-//           console.log("SUCCESS!");
-//           // You can clear the form or display a success message
-//         },
-//         function (error) {
-//           console.log("FAILED...", error);
-//           // You can display an error message
-//         }
-//       );
-//     });
-// };

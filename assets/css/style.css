@@ -2133,7 +2133,7 @@ textarea.form-input::-webkit-resizer {
   align-items: center;
   font-weight: 700;
   color: var(--light-gray);
-  width: 100%;
+  /* width: 100%; */
   font-size: var(--fs-4);
   font-family: var(--ff-mono);
 }
