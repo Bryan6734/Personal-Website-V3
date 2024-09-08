@@ -1,5 +1,11 @@
 "use strict";
 
+var radius = 250;
+
+if (window.innerWidth < 768) {
+  radius = 150;
+}
+
 var tag_cloud = TagCloud(
   ".word-cloud",
   [
@@ -22,15 +28,22 @@ var tag_cloud = TagCloud(
     "Bootstrap",
     "Firebase",
     "MongoDB",
+    "Node.js",
+    "Leaflet",
+
   ],
   {
-    radius: "250",
+    radius: radius,
     maxSpeed: "fast",
     initSpeed: "fast",
     direction: 135,
     keep: true,
+    itemClass: "word-cloud-item"
   }
 );
+
+
+// if screen width is less than 768px, change radius from 250 to 150
 
 // element toggle function
 const elementToggleFunc = function (elem) {
