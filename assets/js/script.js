@@ -1,18 +1,23 @@
 "use strict";
 
 // import Lenis from "./lenis";
-const lenis = new Lenis();
 
-lenis.on("scroll", (e) => {
-  // console.log(e);
-});
+// const lenis = new Lenis();
 
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
+// lenis.on("scroll", (e) => {
+//   // console.log(e);
+// });
 
-requestAnimationFrame(raf);
+// lenis.scrollTo(0);
+
+// function raf(time) {
+//   lenis.raf(time);
+//   requestAnimationFrame(raf);
+// }
+
+// requestAnimationFrame(raf);
+
+// ensure scroll is at 0
 
 var radius = 250;
 
@@ -213,3 +218,87 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  window.scrollTo(0, 0);
+
+  // Ensure the page is scrolled to the top
+
+  setTimeout(() => {
+    window.scrollTo(0, 0);
+    // To make sure Lenis updates correctly after scrolling
+    // lenis.update();
+    const tl = gsap.timeline();
+
+    // get slider
+    const slider = document.querySelector(".welcome-slider");
+    const sidebar = document.querySelector(".sidebar");
+    const hero = document.querySelector(".main-content");
+    const mapbox = document.querySelector(".mapbox");
+
+    tl.fromTo(
+      slider,
+      {
+        y: 0,
+        borderRadius: "200%",
+      },
+      {
+        y: "-=100%",
+        ease: "power2.out",
+        duration: 1.5,
+        delay: 1,
+        borderRadius: "10%",
+      },
+      0
+    )
+    .fromTo(
+      sidebar,
+      {
+        y: 500,
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        ease: "power2.out",
+        duration: 1.1,
+        delay: 1.3,
+      },
+      0
+    )
+      .fromTo(
+        hero,
+        {
+          height: "100%",
+          y: 500,
+          opacity: 0,
+        },
+        {
+          height: "100%",
+          opacity: 1,
+          y: 0,
+          ease: "power2.out",
+          duration: 1.1,
+          delay: 1.35,
+        },
+        0
+      )
+      .fromTo(
+        ".mapbox",
+        {
+          display: "none",
+          opacity: 0,
+          y: 500,
+        },
+        {
+          display: "block",
+          opacity: 1,
+          y: 0,
+          ease: "power2.out",
+          duration: 1.1,
+          delay: 1.35,
+        },
+        0
+      );
+  }, 50);
+});

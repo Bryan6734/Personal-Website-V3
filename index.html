@@ -25,11 +25,7 @@
       -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-      /> -->
-      <script defer src="./assets/js/script.js"></script>
+    <script defer src="./assets/js/script.js"></script>
   </head>
 
   <body>
@@ -39,14 +35,10 @@
     ></script>
 
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
-    <!--
-    - #MAIN
-  -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
     <main>
-      <!--
-      - #SIDEBAR
-    -->
+      <div class="welcome-slider"></div>
 
       <aside class="sidebar" data-sidebar>
         <div class="sidebar-info">
@@ -55,7 +47,7 @@
           </figure>
 
           <div class="info-content">
-            <h1 class="name" title="Bryan sukidi">Bryan Sukidi</h1>
+            <h1 class="name" title="Bryan Sukidi">Bryan Sukidi</h1>
 
             <p class="title">Developer</p>
           </div>
@@ -79,9 +71,7 @@
               <div class="contact-info">
                 <p class="contact-title">Email</p>
 
-                <a href="mailto:bsukidi@unc.edu" class="contact-link"
-                  >bsukidi@unc.edu</a
-                >
+                <a class="contact-link">bsukidi@unc.edu</a>
               </div>
             </li>
 
@@ -96,8 +86,11 @@
                 <a
                   href="https://www.linkedin.com/in/bryan-sukidi-91699a231/"
                   class="contact-link"
+                  target="_blank"
                   >Bryan Sukidi</a
                 >
+
+                <!-- make link open in new tab -->
               </div>
             </li>
             <li class="contact-item">
@@ -108,7 +101,10 @@
               <div class="contact-info">
                 <p class="contact-title">GitHub</p>
 
-                <a href="https://github.com/Bryan6734" class="contact-link"
+                <a
+                  href="https://github.com/Bryan6734"
+                  class="contact-link"
+                  target="_blank"
                   >Bryan6734</a
                 >
               </div>
@@ -122,7 +118,7 @@
               <div class="contact-info">
                 <p class="contact-title">Location</p>
 
-                <address>Somerville, Massachusetts</address>
+                <address>Boston | Chapel Hill</address>
               </div>
             </li>
           </ul>
@@ -207,12 +203,12 @@
               the risks that AI poses to humanity. I'm interested in working
               with
               <span class="blue-text">large language models</span> to help
-              improve their reliability and interpretability.
+              improve their robustness and interpretability.
             </p>
 
             <p>
               Apart from that, I love indoor rock climbing, playing guitar, and
-              listening to people's stories. Feel free to
+              listening to podcasts. Feel free to
               <a
                 style="display: inline; text-decoration-color: #88b6ff"
                 href="mailto:bsukidi@unc.edu"
@@ -287,13 +283,13 @@
 
           <section class="contact-form">
             <h3 class="h3 form-title">Location</h3>
-
-            <section class="mapbox" data-mapbox>
+            <section tabindex="-1" class="mapbox" data-mapbox>
               <figure>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29484.11347733562!2d-71.099496!3d42.387597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e379f63f253f6f%3A0x4e3f6f4e6f6f6f6f!2sSomerville%2C%20MA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.938672178712!2d-79.0501796847597!3d35.90491298014059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acc3a4e5b1b1b1%3A0x4e3f6f4e6f6f6f6f!2sUniversity%20of%20North%20Carolina%20at%20Chapel%20Hill!5e0!3m2!1sen!2sus!4v1647608789441!5m2!1sen!2sus&zoom=3"
                   width="400"
                   height="300"
+                  tabindex="-1"
                   loading="lazy"
                 ></iframe>
               </figure>
@@ -321,23 +317,25 @@
 
             <ol class="timeline-list">
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">UNC Chapel Hill</h4>
+                <h4 class="h4 timeline-item-title">
+                  University of North Carolina at Chapel Hill
+                </h4>
 
-                <span>2024 — 2028</span>
+                <span>B.S, Computer Science & Statistics | Class of 2028</span>
 
                 <p class="timeline-text">
-                  Morehead-Cain Scholar & Honors Carolina Student
+                  Morehead-Cain Scholar, Honors Carolina, AI@UNC, Ethics
+                  Ambassador, UNC Rock Climbing
                 </p>
               </li>
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">Milton Academy</h4>
 
-                <span>2020 — 2024</span>
+                <span>Valedictory Speaker | Class of 2024</span>
 
                 <p class="timeline-text">
-                  Courses: Accelerated Calculus • AI & Machine Learning • Web
-                  Applications • Advanced Topics in CS • Economic Inequality •
-                  History & Philosophy of Science • Drawing, Painting, & Design
+                  Student Government, Diversity Equity & Inclusion Committee,
+                  Programming Club
                 </p>
               </li>
             </ol>
@@ -398,6 +396,20 @@
 
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">
+                  Research Intern, The Broad Institute of MIT & Harvard
+                </h4>
+
+                <span>Jun 2023 - Aug 2023</span>
+
+                <p class="timeline-text">
+                  Wrote Python scripts to quantify differential gene expression
+                  in somatically mutated genes across schizophrenia and control
+                  donors. Presented findings at McCarroll Lab meetings and
+                  poster sessions.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
                   Event Organizer, Milton Academy CultureFest
                 </h4>
 
@@ -409,20 +421,6 @@
                   location, and catering forms for health & safety. Organized
                   Indonesian culture booth. Clarified goal of promoting cultural
                   awareness and learning.
-                </p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Research Intern, The Broad Institute of MIT & Harvard
-                </h4>
-
-                <span>Jun 2023 - Aug 2023</span>
-
-                <p class="timeline-text">
-                  Wrote Python scripts to quantify differential gene expression
-                  in somatically mutated genes across schizophrenia and control
-                  donors. Presented findings at McCarroll Lab meetings and
-                  poster sessions.
                 </p>
               </li>
               <li class="timeline-item">
@@ -1109,7 +1107,6 @@
                   </div>
                 </a>
               </li>
-              
 
               <li class="blog-post-item">
                 <a href="#">
@@ -1269,7 +1266,7 @@
     <!--
     - custom js link
   -->
-  
+
     <!--
     - ionicon link
   -->
