@@ -22,7 +22,7 @@
 var radius = 250;
 
 if (window.innerWidth < 768) {
-  radius = 150;
+  radius = 180;
 }
 
 var tag_cloud = TagCloud(
@@ -49,6 +49,7 @@ var tag_cloud = TagCloud(
     "MongoDB",
     "Node.js",
     "Leaflet",
+    "OpenAI Gym"
   ],
   {
     radius: radius,
@@ -240,7 +241,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       slider,
       {
         y: 0,
-        borderRadius: "200%",
+        borderRadius: "300%",
       },
       {
         y: "-=100%",
@@ -251,21 +252,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
       },
       0
     )
-    .fromTo(
-      sidebar,
-      {
-        y: 500,
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        ease: "power2.out",
-        duration: 1.1,
-        delay: 1.3,
-      },
-      0
-    )
+      .fromTo(
+        sidebar,
+        {
+          y: 500,
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          ease: "power2.out",
+          duration: 1.1,
+          delay: 1.3,
+        },
+        0
+      )
       .fromTo(
         hero,
         {
@@ -299,6 +300,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
           delay: 1.35,
         },
         0
+      )
+      .fromTo(
+        ".word-cloud",
+        {
+          scale: 0,
+        },
+        {
+          scale: 1,
+          ease: "power2.out",
+          duration: 1.1,
+          delay: 0.3,
+        },
+        1
       );
   }, 50);
 });
+
+
