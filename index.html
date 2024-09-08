@@ -21,17 +21,21 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!--
-    - google font link
-  -->
+      - google font link
+      -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
-    /> -->
+      /> -->
   </head>
 
   <body>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"
+    ></script>
     <!--
     - #MAIN
   -->
@@ -44,11 +48,7 @@
       <aside class="sidebar" data-sidebar>
         <div class="sidebar-info">
           <figure class="avatar-box">
-            <img
-              src="./assets/images/bryan_headshot.jpg"
-              alt="Bryan Sukidi"
-              width="80"
-            />
+            <img src="./assets/images/bryan_headshot.jpg" alt="Bryan Sukidi" />
           </figure>
 
           <div class="info-content">
@@ -193,136 +193,34 @@
           <section class="about-text">
             <p>
               Hey there! My name is <span class="blue-text">Bryan Sukidi</span>.
-              I'm an incoming freshman at UNC Chapel Hill, having just graduated
-              from Milton Academy.
+              I'm a first-year undergraduate at UNC Chapel Hill studying
+              <span class="blue-text">Computer Science</span> and
+              <span class="blue-text">Statistics.</span>
             </p>
 
             <p>
               Over the past four years, I've become increasingly concerned about
-              the risks that AI poses to us all. These risks have inspired me to
-              pursue a degree in
-              <span class="blue-text">computer science</span> to learn more
-              about how we can develop safer and more equitable AI.
+              the risks that AI poses to humanity. learn more about how we can
+              develop safer, more interpretable AI.
             </p>
 
             <p>
               Apart from that, I love indoor rock climbing, playing guitar, and
-              exploring different religions. Feel free to
+              talking about religion. Feel free to
               <a
-                style="
-                  display: inline;
-                  text-decoration: underline;
-                  text-decoration-color: #88b6ff;
-                "
-                href="mailto:bryan_sukidi24@milton.edu"
+                style="display: inline; text-decoration-color: #88b6ff"
+                href="mailto:bsukidi@unc.edu"
                 ><span class="blue-text"> email me</span></a
               >
-              if you'd like to get in touch.
+              if you'd like to get in touch. I'm always looking for new
+              opportunities!
             </p>
-
-            <!-- <p>
-
-              Over the past four years, I've become increasingly aware of the
-              risks that AI poses to humanity. These risks have inspired me to
-              pursue both
-              <span class="blue-text">computer science</span> and
-              <span class="blue-text">public policy</span> in my mission to
-              ensure that this technology aligns with humanity's best interests.
-              In the future, I hope to conduct AI research on improving the
-              interpretability, robustness, and fairness of AI sytems.
-            </p>
-
-            <p>
-              Aside from my academic interests, I love indoor rock climbing,
-              playing guitar, and conversing about religion, music, literature,
-              and more. 
-            </p> -->
+            <div class="word-cloud"></div>
           </section>
 
-          <!--
-          - service
-        -->
-
           <section class="service">
-            <h3 class="h3 service-title">Skills & Interests</h3>
+            <h3 class="h3 service-title">Skills</h3>
 
-            <ul class="service-list">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-dev.svg"
-                    alt="Web development icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Machine Learning</h4>
-
-                  <p class="service-item-text">
-                    Experienced in solving regression, classification, and
-                    clustering problems using TensorFlow and PyTorch
-                  </p>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-design.svg
-                "
-                    alt="design icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web Development</h4>
-
-                  <p class="service-item-text">
-                    Experienced in building full-stack web applications using
-                    React.js, Firebase, MongoDB, Nest.js, and AWS
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/Wrench Hammer Icon.svg"
-                    alt="mobile app icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">AI Safety</h4>
-
-                  <p class="service-item-text">
-                    Interested in AI governance, ethics, interpretability, and
-                    algorithmic fairness
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/Community icon.svg"
-                    alt="camera icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Community Building</h4>
-
-                  <p class="service-item-text">
-                    Passionate about fostering community through events,
-                    open-mic concerts, and mentorship
-                  </p>
-                </div>
-              </li>
-            </ul>
           </section>
 
           <section class="contact-form">
@@ -338,75 +236,89 @@
                 ></iframe>
               </figure>
             </section>
+
+            <section class="service">
+              <h3 class="h3 service-title">Knowledge Graph</h3>
+
+              <ul class="service-list">
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img
+                      src="./assets/images/icon-dev.svg"
+                      alt="Web development icon"
+                      width="40"
+                    />
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Machine Learning</h4>
+
+                    <!-- <p class="service-item-text">
+                    Experienced in solving regression, classification, and
+                    clustering problems using TensorFlow and PyTorch
+                  </p> -->
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img
+                      src="./assets/images/icon-design.svg
+                "
+                      alt="design icon"
+                      width="40"
+                    />
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Web Development</h4>
+
+                    <!-- <p class="service-item-text">
+                    Experienced in building full-stack web applications using
+                    React.js, Firebase, MongoDB, Nest.js, and AWS
+                  </p> -->
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img
+                      src="./assets/images/Wrench Hammer Icon.svg"
+                      alt="mobile app icon"
+                      width="40"
+                    />
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">AI Safety</h4>
+
+                    <!-- <p class="service-item-text">
+                    Interested in AI governance, ethics, interpretability, and
+                    algorithmic fairness
+                  </p> -->
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img
+                      src="./assets/images/Community icon.svg"
+                      alt="camera icon"
+                      width="40"
+                    />
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Community Building</h4>
+
+                    <!-- <p class="service-item-text">
+                    Passionate about fostering community through events,
+                    open-mic concerts, and mentorship
+                  </p> -->
+                  </div>
+                </li>
+              </ul>
+            </section>
           </section>
-
-          <!--
-          - testimonials modal
-        -->
-
-          <!--
-          - clients
-        -->
-
-          <!-- <section class="clients">
-            <h3 class="h3 clients-title">Clients</h3>
-
-            <ul class="clients-list has-scrollbar">
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-1-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-2-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-3-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-4-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-5-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-6-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-            </ul>
-          </section> -->
         </article>
 
         <!--

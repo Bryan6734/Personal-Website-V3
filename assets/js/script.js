@@ -1,5 +1,37 @@
 "use strict";
 
+var tag_cloud = TagCloud(
+  ".word-cloud",
+  [
+    "Python",
+    "JavaScript",
+    "Java",
+    "C#",
+    "NumPy",
+    "Pandas",
+    "Matplotlib",
+    "Seaborn",
+    "SciPy",
+    "ScanPy",
+    "statsmodels",
+    "scikit-Learn",
+    "TensorFlow",
+    "PyTorch",
+    "React.js",
+    "MUI",
+    "Bootstrap",
+    "Firebase",
+    "MongoDB",
+  ],
+  {
+    radius: "250",
+    maxSpeed: "fast",
+    initSpeed: "fast",
+    direction: 135,
+    keep: true,
+  }
+);
+
 // element toggle function
 const elementToggleFunc = function (elem) {
   elem.classList.toggle("active");
@@ -48,7 +80,6 @@ for (let i = 0; i < projectsItem.length; i++) {
       modalLink.addEventListener("click", function (event) {
         event.preventDefault();
       });
-
     } else {
       modalLink.href = this.querySelector("[data-project-link]").innerHTML;
     }

@@ -1,0 +1,7 @@
+# give me a gitignore for a project that has node dependencies
+
+node_modules/
+npm-debug.log
+.DS_Store
+.env
+

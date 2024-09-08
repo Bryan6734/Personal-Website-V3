@@ -2,6 +2,11 @@
   #style.css
 \*-----------------------------------*/
 
+/* import roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/* inconsolata */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700&display=swap');
+
 /**
  * copyright 2022 @codewithsadee
  */
@@ -54,10 +59,10 @@
   --eerie-black-2: hsl(240, 2%, 12%);
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 98%);
+  --white-2: hsl(0, 0%, 100%);
   --orange-yellow-crayola: #88b6ff;
   --vegas-gold: #88b6ff;
-  --light-gray: hsl(0, 0%, 84%);
+  --light-gray: hsl(0, 0%, 88%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
@@ -68,7 +73,13 @@
   /* font-family */
   /* --ff-poppins: "Poppins", sans-serif; */
   /* change to apple's font */
-  --ff-poppins: "SF Pro Display", sans-serif;
+
+  /* use roboto. */
+  --ff-poppins: "Roboto", serif;
+  --ff-mono: "Inconsolata", monospace;
+  /* --ff-poppins: "SF Pro Display", sans-serif; */
+
+  /* --ff-poppins: "Calistoga", sans-serif; */
 
   /* font-size */
   --fs-1: 24px;
@@ -353,7 +364,7 @@ span.blue-text {
 
   /* make it not block */
   display: inline;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /*-----------------------------------*\
@@ -381,35 +392,29 @@ span.blue-text {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  padding-top: 5px;
+  /* padding-top: 5px; */
   overflow: hidden;
-
 
   border-radius: 20px;
   object-fit: contain;
-  height: 80px;
-
+  /* height: 80px; */
 }
 
 .avatar-box img {
-  height: 75px;
-  width: 85px;
-  
+  /* height: 85px;
+  width: 85px; */
 }
-
 
 .priorities {
   /* make this ordered list numbered */
   padding-left: 20px;
-  
-
-  
 }
 
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-2);
   font-weight: var(--fw-500);
+  font-family: var(--ff-mono);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
 }
@@ -632,10 +637,15 @@ span.blue-text {
 
 .service-content-box {
   text-align: center;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .service-item-title {
-  margin-bottom: 7px;
+  /* margin-bottom: 7px; */
 }
 
 .service-item-text {
@@ -1436,8 +1446,8 @@ textarea.form-input::-webkit-resizer {
     --fs-1: 32px;
     --fs-2: 30px;
     --fs-3: 26px;
-    --fs-4: 18px;
-    --fs-6: 15px;
+    --fs-4: 20px;
+    --fs-6: 17px;
     --fs-7: 15px;
     --fs-8: 12px;
   }
@@ -1515,8 +1525,6 @@ textarea.form-input::-webkit-resizer {
     height: 132px;
     display: flex;
 
-  
-
     object-fit: contain;
     border-radius: 30px;
   }
@@ -1592,7 +1600,7 @@ textarea.form-input::-webkit-resizer {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 18px;
-    padding: 30px;
+    padding: 15px 20px;
   }
 
   .service-icon-box {
@@ -1607,7 +1615,7 @@ textarea.form-input::-webkit-resizer {
   /* testimonials */
 
   .testimonials-title {
-    margin-bottom: 25px;
+    /* margin-bottom: 5px; */
   }
 
   .testimonials-list {
@@ -2112,4 +2120,20 @@ textarea.form-input::-webkit-resizer {
   .timeline-text {
     max-width: 700px;
   }
+}
+
+.tag-cloud {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.word-cloud {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: var(--light-gray);
+  width: 100%;
+  font-size: var(--fs-4);
+  font-family: var(--ff-mono)
 }
