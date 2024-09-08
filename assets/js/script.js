@@ -49,7 +49,7 @@ var tag_cloud = TagCloud(
     "MongoDB",
     "Node.js",
     "Leaflet",
-    "OpenAI Gym"
+    "OpenAI Gym",
   ],
   {
     radius: radius,
@@ -270,12 +270,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
       .fromTo(
         hero,
         {
-          height: "100%",
           y: 500,
           opacity: 0,
         },
         {
-          height: "100%",
           opacity: 1,
           y: 0,
           ease: "power2.out",
@@ -316,5 +314,3 @@ document.addEventListener("DOMContentLoaded", (event) => {
       );
   }, 50);
 });
-
-
