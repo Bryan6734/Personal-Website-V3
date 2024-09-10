@@ -1,209 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bryan Sukidi</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bryan Sukidi</title>
 
-    <!--
+		<!--
     - favicon
   -->
-    <link
-      rel="shortcut icon"
-      href="./assets/images/my-avatar.png"
-      type="image/x-icon"
-    />
+		<link rel="shortcut icon" href="./assets/images/my-avatar.png" type="image/x-icon" />
 
-    <!--
+		<!--
     - custom css link
   -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
 
-    <!--
+		<!--
       - google font link
       -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script defer src="./assets/js/script.js"></script>
-  </head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<script defer src="./assets/js/script.js"></script>
+	</head>
 
-  <body>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"
-    ></script>
+	<body>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
 
-    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+		<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
-    <main>
-      <div class="welcome-slider"></div>
-      <div class="cursor"></div>
+		<main>
+			<div class="welcome-slider"></div>
+			<div class="cursor"></div>
 
-      <aside class="sidebar" data-sidebar>
-        <div class="sidebar-info">
-          <figure class="avatar-box">
-            <img src="./assets/images/bryan_headshot.jpg" alt="Bryan Sukidi" />
-          </figure>
+			<aside class="sidebar" data-sidebar>
+				<div class="sidebar-info">
+					<figure class="avatar-box">
+						<img src="./assets/images/bryan_headshot.jpg" alt="Bryan Sukidi" />
+					</figure>
 
-          <div class="info-content">
-            <h1 class="name" title="Bryan Sukidi">Bryan Sukidi</h1>
+					<div class="info-content">
+						<h1 class="name" title="Bryan Sukidi">Bryan Sukidi</h1>
 
-            <p class="title">Developer</p>
-          </div>
+						<p class="title">Developer</p>
+					</div>
 
-          <button class="info_more-btn" data-sidebar-btn>
-            <span>Show Contacts</span>
+					<button class="info_more-btn" data-sidebar-btn>
+						<span>Show Contacts</span>
 
-            <ion-icon name="chevron-down"></ion-icon>
-          </button>
-        </div>
+						<ion-icon name="chevron-down"></ion-icon>
+					</button>
+				</div>
 
-        <div class="sidebar-info_more">
-          <div class="separator"></div>
+				<div class="sidebar-info_more">
+					<div class="separator"></div>
 
-          <ul class="contacts-list">
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
+					<ul class="contacts-list">
+						<li class="contact-item">
+							<div class="icon-box">
+								<ion-icon name="mail-outline"></ion-icon>
+							</div>
 
-              <div class="contact-info">
-                <p class="contact-title">Email</p>
+							<div class="contact-info">
+								<p class="contact-title">Email</p>
 
-                <a class="contact-link">bsukidi@unc.edu</a>
-              </div>
-            </li>
+								<a class="contact-link">bsukidi@unc.edu</a>
+							</div>
+						</li>
 
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </div>
+						<li class="contact-item">
+							<div class="icon-box">
+								<ion-icon name="logo-linkedin"></ion-icon>
+							</div>
 
-              <div class="contact-info">
-                <p class="contact-title">LinkedIn</p>
+							<div class="contact-info">
+								<p class="contact-title">LinkedIn</p>
 
-                <a
-                  href="https://www.linkedin.com/in/bryan-sukidi-91699a231/"
-                  class="contact-link"
-                  target="_blank"
-                  >Bryan Sukidi</a
-                >
+								<a href="https://www.linkedin.com/in/bryan-sukidi-91699a231/" class="contact-link" target="_blank">Bryan Sukidi</a>
 
-                <!-- make link open in new tab -->
-              </div>
-            </li>
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="phone-portrait-outline"></ion-icon>
-              </div>
+								<!-- make link open in new tab -->
+							</div>
+						</li>
+						<li class="contact-item">
+							<div class="icon-box">
+								<ion-icon name="phone-portrait-outline"></ion-icon>
+							</div>
 
-              <div class="contact-info">
-                <p class="contact-title">GitHub</p>
+							<div class="contact-info">
+								<p class="contact-title">GitHub</p>
 
-                <a
-                  href="https://github.com/Bryan6734"
-                  class="contact-link"
-                  target="_blank"
-                  >Bryan6734</a
-                >
-              </div>
-            </li>
+								<a href="https://github.com/Bryan6734" class="contact-link" target="_blank">Bryan6734</a>
+							</div>
+						</li>
 
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
+						<li class="contact-item">
+							<div class="icon-box">
+								<ion-icon name="location-outline"></ion-icon>
+							</div>
 
-              <div class="contact-info">
-                <p class="contact-title">Location</p>
+							<div class="contact-info">
+								<p class="contact-title">Location</p>
 
-                <address>Boston | Chapel Hill</address>
-              </div>
-            </li>
-          </ul>
+								<address>Boston | Chapel Hill</address>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</aside>
 
-       
-        </div>
-      </aside>
-
-      <!--
+			<!--
       - #main-content
     -->
 
-      <div class="main-content">
-        <!--
+			<div class="main-content">
+				<!--
         - #NAVBAR
       -->
 
-       <nav class="navbar">
+				<nav class="navbar">
+					<ul class="navbar-list">
+						<li class="navbar-item">
+							<button class="navbar-link active" data-nav-link>About</button>
+						</li>
 
-        <ul class="navbar-list">
+						<li class="navbar-item">
+							<button class="navbar-link" data-nav-link>Resume</button>
+						</li>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+						<li class="navbar-item">
+							<button class="navbar-link" data-nav-link>Projects</button>
+						</li>
+					</ul>
+				</nav>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          
-
-     
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projects</button>
-          </li> 
-
-        </ul>
-
-      </nav>
-
-        <!--
+				<!--
         - #ABOUT
       -->
 
-        <article class="about active" data-page="about">
-          <header>
-            <h2 class="h2 article-title">About me</h2>
-          </header>
+				<article class="about active" data-page="about">
+					<header>
+						<h2 class="h2 article-title">About me</h2>
+					</header>
 
-          <section class="about-text">
-            <p>
-              My name is <span class="blue-text">Bryan Sukidi</span>. I'm a
-              first-year undergraduate at UNC Chapel Hill studying
-              <span class="blue-text">Computer Science</span> and
-              <span class="blue-text">Statistics</span> under a Morehead-Cain
-              scholarship.
-            </p>
+					<section class="about-text">
+						<p>
+							My name is <span class="blue-text">Bryan Sukidi</span>. I'm a first-year undergraduate at UNC Chapel Hill studying
+							<span class="blue-text">Computer Science</span> and <span class="blue-text">Statistics</span> under a Morehead-Cain
+							scholarship.
+						</p>
 
-            <p>
-              Over the past four years, I've become increasingly concerned with
-              the risks that AI poses to humanity. I'm interested in working
-              with
-              <span class="blue-text">large language models</span> to help
-              improve their robustness and interpretability.
-            </p>
+						<p>
+							Over the past four years, I've become increasingly concerned with the risks that AI poses to humanity. I'm interested in
+							working with
+							<span class="blue-text">large language models</span> to help improve their robustness and interpretability.
+						</p>
 
-            <p>
-              Apart from that, I love indoor rock climbing, playing guitar, and
-              listening to podcasts. Feel free to
-              <a
-                style="display: inline; text-decoration-color: #88b6ff"
-                href="mailto:bsukidi@unc.edu"
-                ><span class="blue-text"> email me</span></a
-              >
-              if you'd like to get in touch. I'm always looking for new
-              opportunities!
-            </p>
-          </section>
+						<p>
+							Apart from that, I love indoor rock climbing, playing guitar, and listening to podcasts. Feel free to
+							<a style="display: inline; text-decoration-color: #88b6ff" href="mailto:bsukidi@unc.edu"
+								><span class="blue-text"> email me</span></a
+							>
+							if you'd like to get in touch. I'm always looking for new opportunities!
+						</p>
+					</section>
 
-
-          <!-- TODO: Fix mobile view of skills interests -->
-          <section class="service">
-            <h3 class="h3 form-title">Skills & Interests</h3>
-            <!-- <ul class="service-list">
+					<!-- TODO: Fix mobile view of skills interests -->
+					<section class="service">
+						<h3 class="h3 form-title">My Skills</h3>
+						<!-- <ul class="service-list">
               <li class="service-item">
                 <div class="service-icon-box">
                   <img
@@ -247,281 +212,226 @@
               </li>
             </ul> -->
 
-            <div class="word-cloud"></div>
-          </section>
+						<div class="word-cloud"></div>
+					</section>
 
-          <section class="contact-form">
-            <h3 class="h3 form-title">Location</h3>
-            <section tabindex="-1" class="mapbox" data-mapbox>
-              <figure>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.938672178712!2d-79.0501796847597!3d35.90491298014059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acc3a4e5b1b1b1%3A0x4e3f6f4e6f6f6f6f!2sUniversity%20of%20North%20Carolina%20at%20Chapel%20Hill!5e0!3m2!1sen!2sus!4v1647608789441!5m2!1sen!2sus&zoom=3"
-                  width="400"
-                  height="300"
-                  tabindex="-1"
-                  loading="lazy"
-                ></iframe>
-              </figure>
-            </section>
-          </section>
-        </article>
+					<section class="contact-form">
+						<h3 class="h3 form-title">Location</h3>
+						<section tabindex="-1" class="mapbox" data-mapbox>
+							<figure>
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.938672178712!2d-79.0501796847597!3d35.90491298014059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acc3a4e5b1b1b1%3A0x4e3f6f4e6f6f6f6f!2sUniversity%20of%20North%20Carolina%20at%20Chapel%20Hill!5e0!3m2!1sen!2sus!4v1647608789441!5m2!1sen!2sus&zoom=3"
+									width="400"
+									height="300"
+									tabindex="-1"
+									loading="lazy"
+								></iframe>
+							</figure>
+						</section>
+					</section>
+				</article>
 
-        <!--
+				<!--
         - #RESUME
       -->
 
-        <article class="resume" data-page="resume">
-          <header>
-            <h2 class="h2 article-title">Resume</h2>
-          </header>
+				<article class="resume" data-page="resume">
+					<header>
+						<h2 class="h2 article-title">Resume</h2>
+					</header>
 
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
+					<section class="timeline">
+						<div class="title-wrapper">
+							<div class="icon-box">
+								<ion-icon name="book-outline"></ion-icon>
+							</div>
 
-              <h3 class="h3">Education</h3>
-            </div>
+							<h3 class="h3">Education</h3>
+						</div>
 
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  University of North Carolina at Chapel Hill
-                </h4>
+						<ol class="timeline-list">
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">University of North Carolina at Chapel Hill</h4>
 
-                <span>B.S, Computer Science & Statistics | Class of 2028</span>
+								<span>B.S, Computer Science & Statistics | Class of 2028</span>
 
-                <p class="timeline-text">
-                  Morehead-Cain Scholar, Honors Carolina, AI@UNC, Ethics
-                  Ambassador, UNC Rock Climbing
-                </p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Milton Academy</h4>
+								<p class="timeline-text">Morehead-Cain Scholar, Honors Carolina, AI@UNC, Ethics Ambassador, UNC Rock Climbing</p>
+							</li>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">Milton Academy</h4>
 
-                <span>Valedictory Speaker | Class of 2024</span>
+								<span>Valedictory Speaker | Class of 2024</span>
 
-                <p class="timeline-text">
-                  Student Government, Diversity Equity & Inclusion Committee,
-                  Programming Club
-                </p>
-              </li>
-            </ol>
-          </section>
+								<p class="timeline-text">Student Government, Diversity Equity & Inclusion Committee, Programming Club</p>
+							</li>
+						</ol>
+					</section>
 
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="hammer-outline"></ion-icon>
-              </div>
+					<section class="timeline">
+						<div class="title-wrapper">
+							<div class="icon-box">
+								<ion-icon name="hammer-outline"></ion-icon>
+							</div>
 
-              <h3 class="h3">Experience</h3>
-            </div>
+							<h3 class="h3">Experience</h3>
+						</div>
 
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  President, Programming Club
-                </h4>
+						<ol class="timeline-list">
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">President, Programming Club</h4>
 
-                <span>Sep 2022 — Present</span>
+								<span>Sep 2022 — Present</span>
 
-                <p class="timeline-text">
-                  Organized weekly meetings. Hosted 3 hackathons. Developed
-                  frontend website and backend functions for Gotcha, Milton
-                  Academy's annual 800-person game of tag.
-                </p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Class President, Student Government
-                </h4>
+								<p class="timeline-text">
+									Organized weekly meetings. Hosted 3 hackathons. Developed frontend website and backend functions for Gotcha,
+									Milton Academy's annual 800-person game of tag.
+								</p>
+							</li>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">Class President, Student Government</h4>
 
-                <span>Sep 2024 — Present</span>
+								<span>Sep 2024 — Present</span>
 
-                <p class="timeline-text">
-                  Organized class-wide events ranging from Senior Sunrise to
-                  Senior Skip Day. Coordinated 2024 merchandise. Secured $19,500
-                  in funding for Six Flags Trip after several meetings with
-                  Upper School Principal and Deans.
-                </p>
-              </li>
+								<p class="timeline-text">
+									Organized class-wide events ranging from Senior Sunrise to Senior Skip Day. Coordinated 2024 merchandise. Secured
+									$19,500 in funding for Six Flags Trip after several meetings with Upper School Principal and Deans.
+								</p>
+							</li>
 
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Board Member, DEIJ Student Committee
-                </h4>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">Board Member, DEIJ Student Committee</h4>
 
-                <span>Sep 2022 — Present</span>
+								<span>Sep 2022 — Present</span>
 
-                <p class="timeline-text">
-                  Planned advisory conversations and school-wide programming for
-                  Indigenous People's Day and Holocaust Remembrance Day.
-                  Implemented the Bias Incident Report Form. Selected to attend
-                  2022 NAIS Student Diversity Leadership Conference.
-                </p>
-              </li>
+								<p class="timeline-text">
+									Planned advisory conversations and school-wide programming for Indigenous People's Day and Holocaust Remembrance
+									Day. Implemented the Bias Incident Report Form. Selected to attend 2022 NAIS Student Diversity Leadership
+									Conference.
+								</p>
+							</li>
 
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Research Intern, The Broad Institute of MIT & Harvard
-                </h4>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">Research Intern, The Broad Institute of MIT & Harvard</h4>
 
-                <span>Jun 2023 - Aug 2023</span>
+								<span>Jun 2023 - Aug 2023</span>
 
-                <p class="timeline-text">
-                  Wrote Python scripts to quantify differential gene expression
-                  in somatically mutated genes across schizophrenia and control
-                  donors. Presented findings at McCarroll Lab meetings and
-                  poster sessions.
-                </p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Event Organizer, Milton Academy CultureFest
-                </h4>
+								<p class="timeline-text">
+									Wrote Python scripts to quantify differential gene expression in somatically mutated genes across schizophrenia
+									and control donors. Presented findings at McCarroll Lab meetings and poster sessions.
+								</p>
+							</li>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">Event Organizer, Milton Academy CultureFest</h4>
 
-                <span>Mar 2022 — Present</span>
+								<span>Mar 2022 — Present</span>
 
-                <p class="timeline-text">
-                  Oversaw 33 culture booth applications for CultureFest. Managed
-                  6 booths totaling $1200 in funding. Coordinated timing,
-                  location, and catering forms for health & safety. Organized
-                  Indonesian culture booth. Clarified goal of promoting cultural
-                  awareness and learning.
-                </p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  New Student Mentor, Orientation Program
-                </h4>
+								<p class="timeline-text">
+									Oversaw 33 culture booth applications for CultureFest. Managed 6 booths totaling $1200 in funding. Coordinated
+									timing, location, and catering forms for health & safety. Organized Indonesian culture booth. Clarified goal of
+									promoting cultural awareness and learning.
+								</p>
+							</li>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">New Student Mentor, Orientation Program</h4>
 
-                <span>Sep 2022 — Present</span>
+								<span>Sep 2022 — Present</span>
 
-                <p class="timeline-text">
-                  Mentored cohorts of 10-15 new students across International,
-                  Transitions, and New Student Orientation. Facilitated
-                  identity-based discussions, AAPI affinity, and team-bonding
-                  exercises. Spoke on panels about the international student
-                  experience.
-                </p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Python I Instructor, Greater Boston STEM
-                </h4>
+								<p class="timeline-text">
+									Mentored cohorts of 10-15 new students across International, Transitions, and New Student Orientation. Facilitated
+									identity-based discussions, AAPI affinity, and team-bonding exercises. Spoke on panels about the international
+									student experience.
+								</p>
+							</li>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">Python I Instructor, Greater Boston STEM</h4>
 
-                <span>Dec 2022 — Sep 2024</span>
+								<span>Dec 2022 — Sep 2024</span>
 
-                <p class="timeline-text">
-                  Taught 3 semesters of free, introductory Python classes to
-                  students in the Boston area. Programmed Tic-Tac-Toe, MadLibs,
-                  Choose Your Own Adventure, and more. Worked with 21 students
-                  in total over Zoom.
-                </p>
-              </li>
-            </ol>
-          </section>
+								<p class="timeline-text">
+									Taught 3 semesters of free, introductory Python classes to students in the Boston area. Programmed Tic-Tac-Toe,
+									MadLibs, Choose Your Own Adventure, and more. Worked with 21 students in total over Zoom.
+								</p>
+							</li>
+						</ol>
+					</section>
 
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="trophy"></ion-icon>
-              </div>
+					<section class="timeline">
+						<div class="title-wrapper">
+							<div class="icon-box">
+								<ion-icon name="trophy"></ion-icon>
+							</div>
 
-              <h3 class="h3">Honors & Awards</h3>
-            </div>
+							<h3 class="h3">Honors & Awards</h3>
+						</div>
 
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Morehead-Cain Scholarship · Jun 2024
-                </h4>
+						<ol class="timeline-list">
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">Morehead-Cain Scholarship · Jun 2024</h4>
 
-                <span>UNC Chapel Hill </span>
+								<span>UNC Chapel Hill </span>
 
-                <p class="timeline-text">
-                  A full four-year merit scholarship covering the cost of
-                  tuition, room and board, summer enrichment programs, and
-                  grants. Awarded on the basis of leadership, character,
-                  scholarship, and physical vigor. 3% acceptance.
-                </p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  William Bacon Lovering Award · Jun 2024
-                </h4>
+								<p class="timeline-text">
+									A full four-year merit scholarship covering the cost of tuition, room and board, summer enrichment programs, and
+									grants. Awarded on the basis of leadership, character, scholarship, and physical vigor. 3% acceptance.
+								</p>
+							</li>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">William Bacon Lovering Award · Jun 2024</h4>
 
-                <span>Milton Academy</span>
+								<span>Milton Academy</span>
 
-                <p class="timeline-text">
-                  To two students, chosen by their classmates, who have helped
-                  most by their sense of duty to perpetuate the memory of a
-                  gallant gentleman and officer.
-                </p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  A.O. Smith Memoir Prize · Jun 2024
-                </h4>
+								<p class="timeline-text">
+									To two students, chosen by their classmates, who have helped most by their sense of duty to perpetuate the memory
+									of a gallant gentleman and officer.
+								</p>
+							</li>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">A.O. Smith Memoir Prize · Jun 2024</h4>
 
-                <span>Milton Academy</span>
+								<span>Milton Academy</span>
 
-                <p class="timeline-text">
-                  Awarded by the English Department to a student who displays
-                  unusual talent in non-fiction writing.
-                </p>
-                <p class="timeline-text">
-                  "Apartment 45" - A young boy reflects on his family's journey
-                  from Indonesia to America, their sacrifices, and the
-                  bittersweet complexities of identity, belonging, permanence,
-                  and home.
-                </p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  The Computer Science Prize · Jun 2024
-                </h4>
+								<p class="timeline-text">
+									Awarded by the English Department to a student who displays unusual talent in non-fiction writing.
+								</p>
+								<p class="timeline-text">
+									"Apartment 45" - A young boy reflects on his family's journey from Indonesia to America, their sacrifices, and the
+									bittersweet complexities of identity, belonging, permanence, and home.
+								</p>
+							</li>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">The Computer Science Prize · Jun 2024</h4>
 
-                <span>Milton Academy</span>
+								<span>Milton Academy</span>
 
-                <p class="timeline-text">
-                  Awarded to students for excellence in computer science.
-                </p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Ethan Bisbee History & Social Sciences Award · Jun 2024
-                </h4>
+								<p class="timeline-text">Awarded to students for excellence in computer science.</p>
+							</li>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">Ethan Bisbee History & Social Sciences Award · Jun 2024</h4>
 
-                <span>Milton Academy</span>
+								<span>Milton Academy</span>
 
-                <p class="timeline-text">
-                  Awarded to students to recognize outstanding work in the
-                  social sciences.
-                </p>
-              </li>
-            </ol>
-          </section>
-        </article>
+								<p class="timeline-text">Awarded to students to recognize outstanding work in the social sciences.</p>
+							</li>
+						</ol>
+					</section>
+				</article>
 
-        <!--
+				<!--
         - #PORTFOLIO
       -->
 
-        <article class="projects" data-page="projects">
-          <header>
-            <h2 class="h2 article-title">Projects</h2>
-          </header>
+				<article class="projects" data-page="projects">
+					<header>
+						<h2 class="h2 article-title">Projects</h2>
+					</header>
 
-          <section class="projects">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
-              </li>
+					<section class="projects">
+						<ul class="filter-list">
+							<li class="filter-item">
+								<button class="active" data-filter-btn>All</button>
+							</li>
 
-              <!-- <li class="filter-item">
+							<!-- <li class="filter-item">
                 <button data-filter-btn>Web design</button>
               </li>
 
@@ -532,25 +442,23 @@
               <li class="filter-item">
                 <button data-filter-btn>Web development</button>
               </li> -->
-            </ul>
+						</ul>
 
-            <div class="filter-select-box">
-              <button class="filter-select" data-select>
-                <div class="select-value" data-select-value>
-                  Select category
-                </div>
+						<div class="filter-select-box">
+							<button class="filter-select" data-select>
+								<div class="select-value" data-select-value>Select category</div>
 
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
-                </div>
-              </button>
+								<div class="select-icon">
+									<ion-icon name="chevron-down"></ion-icon>
+								</div>
+							</button>
 
-              <ul class="select-list">
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
+							<ul class="select-list">
+								<li class="select-item">
+									<button data-select-item>All</button>
+								</li>
 
-                <!-- <li class="select-item">
+								<!-- <li class="select-item">
                   <button data-select-item>Web design</button>
                 </li>
 
@@ -561,388 +469,236 @@
                 <li class="select-item">
                   <button data-select-item>Web development</button>
                 </li> -->
-              </ul>
-            </div>
+							</ul>
+						</div>
 
-            <ul class="project-list">
-              <li
-                class="project-item active"
-                data-filter-item
-                data-project-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+						<ul class="project-list">
+							<li class="project-item active" data-filter-item data-project-item data-category="web development">
+								<a href="#">
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
 
-                    <img
-                      data-project-img
-                      src="./assets/images/portfolio/library-2.png"
-                      alt="finance"
-                      loading="lazy"
-                    />
-                  </figure>
+										<img data-project-img src="./assets/images/portfolio/library-2.png" alt="finance" loading="lazy" />
+									</figure>
 
-                  <h3 class="project-title" data-project-title>
-                    The Public Libraries of America
-                  </h3>
+									<h3 class="project-title" data-project-title>The Public Libraries of America</h3>
 
-                  <p class="project-category" data-project-category>
-                    CS & Economic Inequality
-                  </p>
+									<p class="project-category" data-project-category>CS & Economic Inequality</p>
 
-                  <p class="desc" style="display: none" data-project-desc>
-                    For my Economic Inequality Midterm, I created an interactive
-                    map of 1,500 public libraries across America and used data
-                    from the U.S. Census as well as the 2019 Public Library
-                    Survey to analyze differences in library quality and
-                    services across racial and economic lines. This project
-                    helped me hone my data analysis and visualization skills
-                    through working with spatial data and creating the map.
-                  </p>
+									<p class="desc" style="display: none" data-project-desc>
+										For my Economic Inequality Midterm, I created an interactive map of 1,500 public libraries across America and
+										used data from the U.S. Census as well as the 2019 Public Library Survey to analyze differences in library
+										quality and services across racial and economic lines. This project helped me hone my data analysis and
+										visualization skills through working with spatial data and creating the map.
+									</p>
 
-                  <time
-                    style="display: none"
-                    datetime="2024-06-14"
-                    data-project-time
-                    >Bryan Sukidi • January 2024</time
-                  >
+									<time style="display: none" datetime="2024-06-14" data-project-time>Bryan Sukidi • January 2024</time>
 
-                  <p style="display: none" data-project-link>
-                    https://bryan6734.github.io/library-inequality/
-                  </p>
+									<p style="display: none" data-project-link>https://bryan6734.github.io/library-inequality/</p>
 
-                  <p style="display: none" data-project-skills>
-                    Python, Pandas, Leaflet.js, HTML, CSS, JavaScript, Seaborn,
-                    Matplotlib, Data Analysis, Data Wrangling
-                  </p>
-                </a>
-              </li>
-              <li
-                class="project-item active"
-                data-filter-item
-                data-project-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+									<p style="display: none" data-project-skills>
+										Python, Pandas, Leaflet.js, HTML, CSS, JavaScript, Seaborn, Matplotlib, Data Analysis, Data Wrangling
+									</p>
+								</a>
+							</li>
+							<li class="project-item active" data-filter-item data-project-item data-category="web development">
+								<a href="#">
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
 
-                    <img
-                      data-project-img
-                      class="project-image"
-                      src="./assets/images/portfolio/milton-globe.png"
-                      alt="finance"
-                      loading="lazy"
-                    />
-                  </figure>
+										<img
+											data-project-img
+											class="project-image"
+											src="./assets/images/portfolio/milton-globe.png"
+											alt="finance"
+											loading="lazy"
+										/>
+									</figure>
 
-                  <h3 class="project-title" data-project-title>
-                    The Milton Academy Globe
-                  </h3>
+									<h3 class="project-title" data-project-title>The Milton Academy Globe</h3>
 
-                  <p class="project-category" data-project-category>
-                    CS & Diversity, Equity, Inclusion
-                  </p>
+									<p class="project-category" data-project-category>CS & Diversity, Equity, Inclusion</p>
 
-                  <p class="desc" style="display: none" data-project-desc>
-                    I created an interactive globe of Milton Academy students to
-                    help visualize the diversity of our school's student body.
-                    This project was built on Three.js, a JavaScript library for
-                    working with 3D models on web pages, as well as information
-                    scraped from the school directory using Selenium.
-                  </p>
+									<p class="desc" style="display: none" data-project-desc>
+										I created an interactive globe of Milton Academy students to help visualize the diversity of our school's
+										student body. This project was built on Three.js, a JavaScript library for working with 3D models on web
+										pages, as well as information scraped from the school directory using Selenium.
+									</p>
 
-                  <time
-                    style="display: none"
-                    datetime="2024-06-14"
-                    data-project-time
-                    >Bryan Sukidi • February 2023</time
-                  >
-                  <p style="display: none" data-project-link></p>
-                  <p style="display: none" data-project-time></p>
-                  <p style="display: none" data-project-skills>
-                    JavaScript, Python, Three.js, Selenium WebDriver
-                  </p>
-                </a>
-              </li>
+									<time style="display: none" datetime="2024-06-14" data-project-time>Bryan Sukidi • February 2023</time>
+									<p style="display: none" data-project-link></p>
+									<p style="display: none" data-project-time></p>
+									<p style="display: none" data-project-skills>JavaScript, Python, Three.js, Selenium WebDriver</p>
+								</a>
+							</li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-project-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+							<li class="project-item active" data-filter-item data-project-item data-category="web development">
+								<a href="#">
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
 
-                    <img
-                      data-project-img
-                      src="./assets/images/portfolio/ratemycourse.png"
-                      alt="finance"
-                      loading="lazy"
-                    />
-                  </figure>
+										<img data-project-img src="./assets/images/portfolio/ratemycourse.png" alt="finance" loading="lazy" />
+									</figure>
 
-                  <h3 class="project-title" data-project-title>
-                    Rate My Course
-                  </h3>
+									<h3 class="project-title" data-project-title>Rate My Course</h3>
 
-                  <p class="project-category" data-project-category>
-                    CS & Web Applications
-                  </p>
+									<p class="project-category" data-project-category>CS & Web Applications</p>
 
-                  <p class="desc" style="display: none" data-project-desc>
-                    I led the development of ratemycourse.org for students at
-                    Milton Academy to provide meaningful course recommendations
-                    to future students. This website implements Google OAuth for
-                    user authentication, MongoDB & Nest.js for the backend,
-                    React.js for the frontend, and Amazon Web Services +
-                    render.com for hosting the website.
-                  </p>
+									<p class="desc" style="display: none" data-project-desc>
+										I led the development of ratemycourse.org for students at Milton Academy to provide meaningful course
+										recommendations to future students. This website implements Google OAuth for user authentication, MongoDB &
+										Nest.js for the backend, React.js for the frontend, and Amazon Web Services + render.com for hosting the
+										website.
+									</p>
 
-                  <time
-                    style="display: none"
-                    datetime="2024-06-14"
-                    data-project-time
-                    >Bryan Sukidi • February 2023</time
-                  >
+									<time style="display: none" datetime="2024-06-14" data-project-time>Bryan Sukidi • February 2023</time>
 
-                  <p style="display: none" data-project-link>
-                    https://ratemycourse.org
-                  </p>
-                  <p style="display: none" data-project-time></p>
-                  <p style="display: none" data-project-skills>
-                    Amazon Web Services (AWS), JavaScript, NestJS, HTML, CSS,
-                    MongoDB, React.js, Google OAuth
-                  </p>
-                </a>
-              </li>
+									<p style="display: none" data-project-link>https://ratemycourse.org</p>
+									<p style="display: none" data-project-time></p>
+									<p style="display: none" data-project-skills>
+										Amazon Web Services (AWS), JavaScript, NestJS, HTML, CSS, MongoDB, React.js, Google OAuth
+									</p>
+								</a>
+							</li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-project-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+							<li class="project-item active" data-filter-item data-project-item data-category="web development">
+								<a href="#">
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
 
-                    <img
-                      data-project-img
-                      src="./assets/images/portfolio/java-grapher.png"
-                      alt="finance"
-                      loading="lazy"
-                    />
-                  </figure>
+										<img data-project-img src="./assets/images/portfolio/java-grapher.png" alt="finance" loading="lazy" />
+									</figure>
 
-                  <h3 class="project-title" data-project-title>
-                    Java Graphing Calculator
-                  </h3>
+									<h3 class="project-title" data-project-title>Java Graphing Calculator</h3>
 
-                  <p class="project-category" data-project-category>
-                    CS & Mathematics
-                  </p>
+									<p class="project-category" data-project-category>CS & Mathematics</p>
 
-                  <p class="desc" style="display: none" data-project-desc>
-                    I programmed a custom graphing calculator using Java's Swing
-                    and mxParser, an expression-parser library. Features range
-                    from a functional user interface, a graphing and parsing
-                    algorithm of user-inputted functions, and the location of
-                    vertical asymptotes using first and second derivatives.
-                  </p>
+									<p class="desc" style="display: none" data-project-desc>
+										I programmed a custom graphing calculator using Java's Swing and mxParser, an expression-parser library.
+										Features range from a functional user interface, a graphing and parsing algorithm of user-inputted functions,
+										and the location of vertical asymptotes using first and second derivatives.
+									</p>
 
-                  <time
-                    style="display: none"
-                    datetime="2024-06-14"
-                    data-project-time
-                    >Bryan Sukidi • Dec 2023</time
-                  >
-                  <p style="display: none" data-project-link></p>
-                  <p style="display: none" data-project-time></p>
-                  <p style="display: none" data-project-skills>
-                    Java, JavaSwing, mxParser, Pre-Calculus
-                  </p>
-                </a>
-              </li>
+									<time style="display: none" datetime="2024-06-14" data-project-time>Bryan Sukidi • Dec 2023</time>
+									<p style="display: none" data-project-link></p>
+									<p style="display: none" data-project-time></p>
+									<p style="display: none" data-project-skills>Java, JavaSwing, mxParser, Pre-Calculus</p>
+								</a>
+							</li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-project-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+							<li class="project-item active" data-filter-item data-project-item data-category="web development">
+								<a href="#">
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
 
-                    <img
-                      data-project-img
-                      src="./assets/images/portfolio/gotcha.png"
-                      alt="finance"
-                      loading="lazy"
-                    />
-                  </figure>
+										<img data-project-img src="./assets/images/portfolio/gotcha.png" alt="finance" loading="lazy" />
+									</figure>
 
-                  <h3 class="project-title" data-project-title>
-                    Gotcha: Senior Assassin
-                  </h3>
+									<h3 class="project-title" data-project-title>Gotcha: Senior Assassin</h3>
 
-                  <p class="project-category" data-project-category>
-                    CS & Community Building
-                  </p>
+									<p class="project-category" data-project-category>CS & Community Building</p>
 
-                  <p class="desc" style="display: none" data-project-desc>
-                    Alongside Programming Club, I developed a web application
-                    for Milton Academy's annual 2023 Gotcha Week, an all-school
-                    game of assassin. I built the frontend website using
-                    React.js (including the tagging system & leaderboard),
-                    connected the backend using the Firebase SDK, and assisted
-                    with some of the backend functions. This application was
-                    served to 714 students, handling over 15,000,000 document
-                    reads across 7 days.
-                  </p>
+									<p class="desc" style="display: none" data-project-desc>
+										Alongside Programming Club, I developed a web application for Milton Academy's annual 2023 Gotcha Week, an
+										all-school game of assassin. I built the frontend website using React.js (including the tagging system &
+										leaderboard), connected the backend using the Firebase SDK, and assisted with some of the backend functions.
+										This application was served to 714 students, handling over 15,000,000 document reads across 7 days.
+									</p>
 
-                  <time
-                    style="display: none"
-                    datetime="2024-06-14"
-                    data-project-time
-                    >Bryan Sukidi • Dec 2023</time
-                  >
+									<time style="display: none" datetime="2024-06-14" data-project-time>Bryan Sukidi • Dec 2023</time>
 
-                  <p style="display: none" data-project-link></p>
-                  <p style="display: none" data-project-time></p>
-                  <p style="display: none" data-project-skills>
-                    HTML, CSS, React.js, Firebase, Teamwork, Community Building,
-                    Delegation
-                  </p>
-                </a>
-              </li>
+									<p style="display: none" data-project-link></p>
+									<p style="display: none" data-project-time></p>
+									<p style="display: none" data-project-skills>
+										HTML, CSS, React.js, Firebase, Teamwork, Community Building, Delegation
+									</p>
+								</a>
+							</li>
 
-              <lis
-                class="project-item active"
-                data-filter-item
-                data-project-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+							<lis class="project-item active" data-filter-item data-project-item data-category="web development">
+								<a href="#">
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
 
-                    <img
-                      data-project-img
-                      src="./assets/images/portfolio/q-learning-gif.gif"
-                      alt="finance"
-                      loading="lazy"
-                    />
-                  </figure>
+										<img data-project-img src="./assets/images/portfolio/q-learning-gif.gif" alt="finance" loading="lazy" />
+									</figure>
 
-                  <h3 class="project-title" data-project-title>
-                    Deep Q-Learning Race Car
-                  </h3>
+									<h3 class="project-title" data-project-title>Deep Q-Learning Race Car</h3>
 
-                  <p class="project-category" data-project-category>
-                    CS & Machine Learning
-                  </p>
+									<p class="project-category" data-project-category>CS & Machine Learning</p>
 
-                  <p class="desc" style="display: none" data-project-desc>
-                    I trained an AI race car to navigate through a custom
-                    tile-based race track using reinforcement learning. First, I
-                    created the environment using Pygame and connected it with
-                    OpenAI's Gym class. Then, I implemented a DQN (Deep
-                    Q-Network) using Tensorflow's TF_Agents library. The model
-                    was trained for only 20,000 iterations until achieving
-                    desirable results.
-                  </p>
+									<p class="desc" style="display: none" data-project-desc>
+										I trained an AI race car to navigate through a custom tile-based race track using reinforcement learning.
+										First, I created the environment using Pygame and connected it with OpenAI's Gym class. Then, I implemented a
+										DQN (Deep Q-Network) using Tensorflow's TF_Agents library. The model was trained for only 20,000 iterations
+										until achieving desirable results.
+									</p>
 
-                  <time
-                    style="display: none"
-                    datetime="2024-06-14"
-                    data-project-time
-                    >Bryan Sukidi • May 2023</time
-                  >
-                  <p style="display: none" data-project-link></p>
-                  <p style="display: none" data-project-time></p>
-                  <p style="display: none" data-project-skills>
-                    Python, Reinforcement Learning, Neural Networks, Pygame,
-                    OpenAI Gym, TensorFlow (TF_agents)
-                  </p>
-                </a>
-              </lis>
-            </ul>
-          </section>
+									<time style="display: none" datetime="2024-06-14" data-project-time>Bryan Sukidi • May 2023</time>
+									<p style="display: none" data-project-link></p>
+									<p style="display: none" data-project-time></p>
+									<p style="display: none" data-project-skills>
+										Python, Reinforcement Learning, Neural Networks, Pygame, OpenAI Gym, TensorFlow (TF_agents)
+									</p>
+								</a>
+							</lis>
+						</ul>
+					</section>
 
-          <!-- Modal -->
+					<!-- Modal -->
 
-          <div class="modal-container" data-modal-container>
-            <div class="overlay" data-overlay></div>
+					<div class="modal-container" data-modal-container>
+						<div class="overlay" data-overlay></div>
 
-            <section class="testimonials-modal">
-              <button class="modal-close-btn" data-modal-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
+						<section class="testimonials-modal">
+							<button class="modal-close-btn" data-modal-close-btn>
+								<ion-icon name="close-outline"></ion-icon>
+							</button>
 
-              <div class="modal-img-wrapper">
-                <figure class="modal-avatar-box">
-                  <img
-                    src="./assets/images/avatar-1.png"
-                    alt="Daniel lewis"
-                    width="80"
-                    data-modal-img
-                  />
-                </figure>
+							<div class="modal-img-wrapper">
+								<figure class="modal-avatar-box">
+									<img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img />
+								</figure>
 
-                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
-              </div>
+								<img src="./assets/images/icon-quote.svg" alt="quote icon" />
+							</div>
 
-              <div class="modal-content">
-                <a href="#" target="_blank" data-modal-link
-                  ><h4 class="h3 modal-title" data-modal-title></h4
-                ></a>
+							<div class="modal-content">
+								<a href="#" target="_blank" data-modal-link><h4 class="h3 modal-title" data-modal-title></h4></a>
 
-                <time data-modal-time></time>
-                <p style="display: none" data-project-link></p>
-                <p data-modal-text></p>
-                <p class="modal-skills" data-modal-skills></p>
+								<time data-modal-time></time>
+								<p style="display: none" data-project-link></p>
+								<p data-modal-text></p>
+								<p class="modal-skills" data-modal-skills></p>
 
-                <img data-modal-img />
-              </div>
-            </section>
-          </div>
-        </article>
+								<img data-modal-img />
+							</div>
+						</section>
+					</div>
+				</article>
+			</div>
+		</main>
 
-
-      </div>
-    </main>
-
-    <!--
+		<!--
     - custom js link
   -->
 
-    <!--
+		<!--
     - ionicon link
   -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	</body>
 </html>

@@ -219,32 +219,31 @@ document.addEventListener("DOMContentLoaded", (event) => {
 		const slider = document.querySelector(".welcome-slider");
 		const sidebar = document.querySelector(".sidebar");
 		const hero = document.querySelector(".main-content");
-		const mapbox = document.querySelector(".mapbox");
 
 		tl.fromTo(
 			slider,
-			{
-				y: 0,
-				borderRadius: "300%",
+			{	
+				borderRadius: "200%",
 			},
 			{
-				y: "-=100%",
+        translateY: "-100%",
 				ease: "power2.out",
 				duration: 1.5,
 				delay: 1,
-				borderRadius: "10%",
+				borderRadius: "50%",
 			},
 			0
 		)
 			.fromTo(
 				sidebar,
 				{
-					y: 500,
+          
+          translateY: "500px",
 					opacity: 0,
 				},
 				{
-					opacity: 1,
-					y: 0,
+          opacity: 1,
+          translateY: "0%",
 					ease: "power2.out",
 					duration: 1.1,
 					delay: 1.3,
@@ -254,17 +253,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
 			.fromTo(
 				hero,
 				{
-					height: "100%",
-					y: 500,
+					translateY: "600px",
 					opacity: 0,
 				},
-				{
-					height: "100%",
+        {
+          translateY: "0;",
 					opacity: 1,
-					y: 0,
 					ease: "power2.out",
 					duration: 1.1,
-					delay: 1.35,
+					delay: 1.32,
 				},
 				0
 			)
@@ -273,12 +270,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
 				{
 					display: "none",
 					opacity: 0,
-					y: 500,
+					translateY: "250%",
 				},
 				{
 					display: "block",
 					opacity: 1,
-					y: 0,
+					translateY: "0%",
 					ease: "power2.out",
 					duration: 1.1,
 					delay: 1.35,
