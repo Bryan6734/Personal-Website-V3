@@ -187,18 +187,9 @@ for (let i = 0; i < navigationLinks.length; i++) {
 				pages[i].classList.add("active");
 				navigationLinks[i].classList.add("active");
 				window.scrollTo(0, 0);
-      } else {
-        
-        pages[i].classList.remove("active");
-        
-        // TODO: Figure out why navlinks is throwing a TypeError undefined
-        navigationLinks[i].classList.remove("active");
-        
-        
-
-				// console.log("-----");
-				// console.log("navlinks[i] classlist: ", navigationLinks[i].classList);
-				// console.log("pages[i] classlist: ", pages[i].classList);
+			} else {
+				pages[i].classList.remove("active");
+				navigationLinks[i].classList.remove("active");
 			}
 		}
 	});
@@ -222,11 +213,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 		tl.fromTo(
 			slider,
-			{	
+			{
 				borderRadius: "200%",
 			},
 			{
-        translateY: "-100%",
+				translateY: "-100%",
 				ease: "power2.out",
 				duration: 1.5,
 				delay: 1,
@@ -237,13 +228,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
 			.fromTo(
 				sidebar,
 				{
-          
-          translateY: "500px",
+					translateY: "500px",
 					opacity: 0,
 				},
 				{
-          opacity: 1,
-          translateY: "0%",
+					opacity: 1,
+					translateY: "0%",
 					ease: "power2.out",
 					duration: 1.1,
 					delay: 1.3,
@@ -256,8 +246,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 					translateY: "600px",
 					opacity: 0,
 				},
-        {
-          translateY: "0;",
+				{
+					translateY: "0;",
 					opacity: 1,
 					ease: "power2.out",
 					duration: 1.1,
@@ -295,5 +285,48 @@ document.addEventListener("DOMContentLoaded", (event) => {
 				},
 				1
 			);
+		if (window.innerWidth < 1024) {
+			tl.fromTo(
+				".navbar",
+				{
+					translateY: "+=100%",
+					position: "absolute",
+				},
+				{
+					translateY: "0%",
+					position: "fixed",
+					opacity: 1,
+					ease: "power2.out",
+					duration: 0.9,
+					delay: 1.4,
+				},
+				1
+			);
+		}
 	}, 50);
+});
+
+let navbar = document.querySelector(".navbar");
+
+window.addEventListener("DOMContentLoaded", function () {
+	// Run this code once at the beginning of the site
+
+	if (window.innerWidth < 1024) {
+		// move the navbar outside of its parent
+		document.body.appendChild(navbar);
+	} else {
+		// move the navbar back to its parent
+		document.querySelector(".main-content").appendChild(navbar);
+	}
+
+	// Add event listener for window resize
+	window.addEventListener("resize", function () {
+		if (window.innerWidth < 1024) {
+			// move the navbar outside of its parent
+			document.body.appendChild(navbar);
+		} else {
+			// move the navbar back to its parent
+			document.querySelector(".main-content").appendChild(navbar);
+		}
+	});
 });
