@@ -159,8 +159,7 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
-.sidebar,
-article {
+.sidebar {
 	background: var(--eerie-black-2);
 	border: 1px solid var(--jet);
 	border-radius: 20px;
@@ -169,12 +168,24 @@ article {
 	z-index: 1;
 }
 
+article {
+  background: var(--eerie-black-2);
+	border: 1px solid var(--jet);
+	border-radius: 20px;
+	padding: 20px 13px;
+	box-shadow: var(--shadow-1);
+	z-index: 1;
+
+}
+
 .separator {
 	width: 100%;
 	height: 1px;
 	background: var(--jet);
 	margin: 16px 0;
 }
+
+
 
 .icon-box {
 	position: relative;
@@ -210,6 +221,7 @@ article {
 
 article.active {
 	display: block;
+  
 }
 
 .h2,
@@ -1448,6 +1460,7 @@ textarea.form-input::-webkit-resizer {
 		margin-inline: auto;
 		padding: 30px;
 	}
+
 
 	.article-title {
 		font-weight: var(--fw-600);
