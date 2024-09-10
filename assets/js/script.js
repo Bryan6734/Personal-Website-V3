@@ -1,6 +1,5 @@
 "use strict";
 
-
 const lenis = new Lenis();
 
 lenis.on("scroll", (e) => {
@@ -188,10 +187,18 @@ for (let i = 0; i < navigationLinks.length; i++) {
 				pages[i].classList.add("active");
 				navigationLinks[i].classList.add("active");
 				window.scrollTo(0, 0);
-			} else {
-				pages[i].classList.remove("active");
+      } else {
+        
+        pages[i].classList.remove("active");
+        
+        // TODO: Figure out why navlinks is throwing a TypeError undefined
         navigationLinks[i].classList.remove("active");
-        console.log(navigationLinks[i]);
+        
+        
+
+				// console.log("-----");
+				// console.log("navlinks[i] classlist: ", navigationLinks[i].classList);
+				// console.log("pages[i] classlist: ", pages[i].classList);
 			}
 		}
 	});
