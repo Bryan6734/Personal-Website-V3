@@ -34,18 +34,14 @@ var tag_cloud = TagCloud(
 		"Seaborn",
 		"SciPy",
 		"ScanPy",
-		"statsmodels",
 		"scikit-Learn",
 		"TensorFlow",
 		"PyTorch",
 		"React.js",
-		"MUI",
 		"Bootstrap",
 		"Firebase",
-		"MongoDB",
-		"Node.js",
-		"Leaflet",
-		"OpenAI Gym",
+        "MongoDB",
+        "Hugging Face"
 	],
 	{
 		radius: radius,
@@ -56,6 +52,19 @@ var tag_cloud = TagCloud(
 		itemClass: "word-cloud-item",
 	}
 );
+
+
+
+// if  you click on a html with tag "timeline"
+document.querySelectorAll(".timeline").forEach((timeline) => {
+    // // find ol.timeline
+    // const ol = timeline.querySelector("ol.timeline-list");
+    // // flip "hidden" class on click
+    // timeline.addEventListener("click", () => {
+    //     ol.classList.toggle("hidden");
+    // });
+    // console.log(ol);
+});
 
 // if screen width is less than 768px, change radius from 250 to 150
 
@@ -86,6 +95,7 @@ const modalText = document.querySelector("[data-modal-text]");
 const modalTime = document.querySelector("[data-modal-time]");
 const modalSkills = document.querySelector("[data-modal-skills]");
 const modalLink = document.querySelector("[data-modal-link]");
+
 // modal toggle function
 const projectsModalFunc = function () {
 	modalContainer.classList.toggle("active");
