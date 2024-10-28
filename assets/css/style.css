@@ -464,6 +464,10 @@ span.gray-text {
 .sidebar.active .sidebar-info_more {
 	opacity: 1;
 	visibility: visible;
+	transition: var(--transition-2);
+
+    transform-origin: bottom;
+	will-change: transform, translateY;
 }
 
 .contacts-list {
