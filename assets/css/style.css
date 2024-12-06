@@ -7,6 +7,9 @@
 /* inconsolata */
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700&display=swap");
 
+/* inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+
 /**
  * copyright 2022 @codewithsadee
  */
@@ -53,8 +56,12 @@
 	/* change to apple's font */
 
 	/* use roboto. */
-	--ff-poppins: "Roboto", serif;
-	--ff-mono: "Roboto", serif;
+	/* --ff-poppins: "Roboto", serif;
+	--ff-mono: "Roboto", serif; */
+
+
+	--ff-poppins: "Inter", sans-serif;
+	--ff-mono: "Inter", monospace;
 	/* --ff-poppins: "SF Pro Display", sans-serif; */
 
 	/* --ff-poppins: "Calistoga", sans-serif; */
@@ -355,8 +362,7 @@ span.blue-text {
 }
 
 span.gray-text {
-    color: var(--light-gray);
-
+    color: var(--light-gray) !important;
 }
 
 /*-----------------------------------*\
